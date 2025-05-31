@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.wayback-toolbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.wayback-toolbar a {
+  color: #7fdbff;
+}
+
+.wayback-toolbar table {
+  margin: 10px 0;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+.wayback-toolbar table td {
+  border: 1px solid #555;
+  padding: 5px;
+  text-align: center;
+}
+
+.main-content {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: #c00000; /* A Sinterklaas-like red */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #c00000;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+.social-media-table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse; /* Removes default spacing */
+}
+
+.social-media-table td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.social-media-table td:nth-child(2) h2 { /* The middle column with text */
+  font-size: 1.1em;
+  color: #555;
+  margin: 5px 0;
+}
+.social-media-table td:nth-child(2) h2 a {
+    color: #007bff; /* Standard link blue */
+}
+
+
+.sponsors-section p {
+  margin-bottom: 10px; /* Space between sponsor rows */
+  text-align: center; /* Center the sponsor images if they don't fill the width */
+}
+
+.sponsors-section img {
+  vertical-align: middle; /* Align images nicely in a line */
+  margin: 0 2px; /* Small space between images */
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.footer img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Basic responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    width: 95%;
+  }
+  .social-media-table tr, .social-media-table td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .social-media-table img {
+    margin-bottom: 10px;
+  }
+  .sponsors-section p img {
+      max-width: 100px; /* Make sponsor images smaller on small screens */
+      height: auto;
+  }
+}
